@@ -51,7 +51,7 @@ The audio clips are the work of Peter Isotalo and User:Denelson83. They are
 available under a free and/or copyleft licence through [Wikimedia Commons'
 General Phonetics collection](https://commons.wikimedia.org/wiki/General_phonetics).
 
-## Future improvements
+## 💡 Future improvements
 
 Just a few ideas
 
