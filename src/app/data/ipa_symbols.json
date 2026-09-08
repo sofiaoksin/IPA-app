@@ -1,0 +1,284 @@
+{
+  "symbols": [
+    {
+      "id": 1,
+      "symbol": "p",
+      "name": "voiceless bilabial plosive",
+      "description": "as in English 'pat'",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Voiceless_bilabial_plosive.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "category": "consonants"
+    },
+    {
+      "id": 2,
+      "symbol": "b",
+      "name": "voiced bilabial plosive",
+      "description": "as in English 'bat'",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Voiced_bilabial_plosive.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "category": "consonants"
+    },
+    {
+      "id": 3,
+      "symbol": "t",
+      "name": "voiceless alveolar plosive",
+      "description": "as in English 'tap'",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Voiceless_alveolar_plosive.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "category": "consonants"
+    },
+    {
+      "id": 4,
+      "symbol": "d",
+      "name": "voiced alveolar plosive",
+      "description": "as in English 'dam'",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Voiced_alveolar_plosive.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "category": "consonants"
+    },
+    {
+      "id": 5,
+      "symbol": "k",
+      "name": "voiceless velar plosive",
+      "description": "as in English 'cap'",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Voiceless_velar_plosive.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "category": "consonants"
+    },
+    {
+      "id": 6,
+      "symbol": "ɡ",
+      "name": "voiced velar plosive",
+      "description": "as in English 'gap'",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Voiced_velar_plosive.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "category": "consonants"
+    },
+    {
+      "id": 7,
+      "symbol": "m",
+      "name": "voiced bilabial nasal",
+      "description": "as in English 'map'",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Bilabial_nasal.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "category": "consonants"
+    },
+    {
+      "id": 8,
+      "symbol": "n",
+      "name": "voiced alveolar nasal",
+      "description": "as in English 'nap'",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Alveolar_nasal.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "category": "consonants"
+    },
+    {
+      "id": 9,
+      "symbol": "ŋ",
+      "name": "voiced velar nasal",
+      "description": "as in English 'sing'",
+      "audio_url": "",
+      "category": "consonants"
+    },
+    {
+      "id": 10,
+      "symbol": "f",
+      "name": "voiceless labiodental fricative",
+      "description": "as in English 'fat'",
+      "audio_url": "",
+      "category": "consonants"
+    },
+    {
+      "id": 11,
+      "symbol": "v",
+      "name": "voiced labiodental fricative",
+      "description": "as in English 'vat'",
+      "audio_url": "",
+      "category": "consonants"
+    },
+    {
+      "id": 12,
+      "symbol": "θ",
+      "name": "voiceless dental fricative",
+      "description": "as in English 'thaw'",
+      "audio_url": "",
+      "category": "consonants"
+    },
+    {
+      "id": 13,
+      "symbol": "ð",
+      "name": "voiced dental fricative",
+      "description": "as in English 'that'",
+      "audio_url": "",
+      "category": "consonants"
+    },
+    {
+      "id": 14,
+      "symbol": "s",
+      "name": "voiceless alveolar fricative",
+      "description": "as in English 'sap'",
+      "audio_url": "",
+      "category": "consonants"
+    },
+    {
+      "id": 15,
+      "symbol": "z",
+      "name": "voiced alveolar fricative",
+      "description": "as in English 'zap'",
+      "audio_url": "",
+      "category": "consonants"
+    },
+    {
+      "id": 16,
+      "symbol": "ʃ",
+      "name": "voiceless postalveolar fricative",
+      "description": "as in English 'ship'",
+      "audio_url": "",
+      "category": "consonants"
+    },
+    {
+      "id": 17,
+      "symbol": "ʒ",
+      "name": "voiced postalveolar fricative",
+      "description": "as in English 'vision'",
+      "audio_url": "",
+      "category": "consonants"
+    },
+    {
+      "id": 18,
+      "symbol": "h",
+      "name": "voiceless glottal fricative",
+      "description": "as in English 'hat'",
+      "audio_url": "",
+      "category": "consonants"
+    },
+    {
+      "id": 19,
+      "symbol": "tʃ",
+      "name": "voiceless postalveolar affricate",
+      "description": "as in English 'chat'",
+      "audio_url": "",
+      "category": "consonants"
+    },
+    {
+      "id": 20,
+      "symbol": "dʒ",
+      "name": "voiced postalveolar affricate",
+      "description": "as in English 'judge'",
+      "audio_url": "",
+      "category": "consonants"
+    },
+    {
+      "id": 21,
+      "symbol": "i",
+      "name": "close front unrounded vowel",
+      "description": "as in English 'fleece'",
+      "audio_url": "",
+      "category": "vowels"
+    },
+    {
+      "id": 22,
+      "symbol": "ɪ",
+      "name": "near-close front unrounded vowel",
+      "description": "as in English 'kit'",
+      "audio_url": "",
+      "category": "vowels"
+    },
+    {
+      "id": 23,
+      "symbol": "e",
+      "name": "close-mid front unrounded vowel",
+      "description": "as in English 'dress' (in some accents)",
+      "audio_url": "",
+      "category": "vowels"
+    },
+    {
+      "id": 24,
+      "symbol": "ɛ",
+      "name": "open-mid front unrounded vowel",
+      "description": "as in English 'dress'",
+      "audio_url": "",
+      "category": "vowels"
+    },
+    {
+      "id": 25,
+      "symbol": "æ",
+      "name": "near-open front unrounded vowel",
+      "description": "as in English 'trap'",
+      "audio_url": "",
+      "category": "vowels"
+    },
+    {
+      "id": 26,
+      "symbol": "ə",
+      "name": "mid central vowel",
+      "description": "as in English 'strut'",
+      "audio_url": "",
+      "category": "vowels"
+    },
+    {
+      "id": 27,
+      "symbol": "ʌ",
+      "name": "open-mid back unrounded vowel",
+      "description": "as in English 'strut'",
+      "audio_url": "",
+      "category": "vowels"
+    },
+    {
+      "id": 28,
+      "symbol": "ɑ",
+      "name": "open back unrounded vowel",
+      "description": "as in English 'father'",
+      "audio_url": "",
+      "category": "vowels"
+    },
+    {
+      "id": 29,
+      "symbol": "ɔ",
+      "name": "open-mid back rounded vowel",
+      "description": "as in English 'lot'",
+      "audio_url": "",
+      "category": "vowels"
+    },
+    {
+      "id": 30,
+      "symbol": "ʊ",
+      "name": "near-close back rounded vowel",
+      "description": "as in English 'foot'",
+      "audio_url": "",
+      "category": "vowels"
+    },
+    {
+      "id": 31,
+      "symbol": "u",
+      "name": "close back rounded vowel",
+      "description": "as in English 'goose'",
+      "audio_url": "",
+      "category": "vowels"
+    },
+    {
+      "id": 32,
+      "symbol": "l",
+      "name": "voiced alveolar lateral-approximant",
+      "description": "as in English 'lap'",
+      "audio_url": "",
+      "category": "approximants"
+    },
+    {
+      "id": 33,
+      "symbol": "ɹ",
+      "name": "voiced alveolar approximant",
+      "description": "as in English 'rap'",
+      "audio_url": "",
+      "category": "approximants"
+    },
+    {
+      "id": 34,
+      "symbol": "j",
+      "name": "voiced palatal approximant",
+      "description": "as in English 'yes'",
+      "audio_url": "",
+      "category": "approximants"
+    },
+    {
+      "id": 35,
+      "symbol": "w",
+      "name": "voiced labial-velar approximant",
+      "description": "as in English 'wet'",
+      "audio_url": "",
+      "category": "approximants"
+    }
+  ]
+}
