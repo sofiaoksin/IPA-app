@@ -14,10 +14,9 @@ pages = [
 ]
 
 with st.bottom:
-    st.caption("Each audio clip is the work of Peter Isotalo, " \
-    "User:Denelson83, " \
-    "and made available under a free and/or copyleft licence. " \
-    "For more information, please visit the Wikimedia Commons page for [General Phonetics](https://commons.wikimedia.org/wiki/General_phonetics).")
+    st.caption("The audio clips are the work of Peter Isotalo and User:Denelson83. They are "
+                "available under a free and/or copyleft licence through [Wikimedia Commons' "
+                "General Phonetics collection](https://commons.wikimedia.org/wiki/General_phonetics).")
 
 pg = st.navigation(pages)
 pg.run()
