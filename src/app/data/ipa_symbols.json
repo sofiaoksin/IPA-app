@@ -69,7 +69,7 @@
       "symbol": "ŋ",
       "name": "voiced velar nasal",
       "description": "as in English 'sing'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Velar_nasal.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "consonants"
     },
     {
@@ -77,7 +77,7 @@
       "symbol": "f",
       "name": "voiceless labiodental fricative",
       "description": "as in English 'fat'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Voiceless_labiodental_fricative.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "consonants"
     },
     {
@@ -85,7 +85,7 @@
       "symbol": "v",
       "name": "voiced labiodental fricative",
       "description": "as in English 'vat'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Voiced_labiodental_fricative.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "consonants"
     },
     {
@@ -93,7 +93,7 @@
       "symbol": "θ",
       "name": "voiceless dental fricative",
       "description": "as in English 'thaw'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Voiceless_dental_fricative.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "consonants"
     },
     {
@@ -101,7 +101,7 @@
       "symbol": "ð",
       "name": "voiced dental fricative",
       "description": "as in English 'that'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Voiced_dental_fricative.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "consonants"
     },
     {
@@ -109,7 +109,7 @@
       "symbol": "s",
       "name": "voiceless alveolar fricative",
       "description": "as in English 'sap'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Voiceless_alveolar_sibilant.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "consonants"
     },
     {
@@ -117,7 +117,7 @@
       "symbol": "z",
       "name": "voiced alveolar fricative",
       "description": "as in English 'zap'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Voiced_alveolar_sibilant.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "consonants"
     },
     {
@@ -125,7 +125,7 @@
       "symbol": "ʃ",
       "name": "voiceless postalveolar fricative",
       "description": "as in English 'ship'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Voiceless_palato-alveolar_sibilant.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "consonants"
     },
     {
@@ -133,7 +133,7 @@
       "symbol": "ʒ",
       "name": "voiced postalveolar fricative",
       "description": "as in English 'vision'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Voiced_palato-alveolar_sibilant.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "consonants"
     },
     {
@@ -141,7 +141,7 @@
       "symbol": "h",
       "name": "voiceless glottal fricative",
       "description": "as in English 'hat'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Voiceless_glottal_fricative.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "consonants"
     },
     {
@@ -149,7 +149,7 @@
       "symbol": "tʃ",
       "name": "voiceless postalveolar affricate",
       "description": "as in English 'chat'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Voiceless_palato-alveolar_affricate.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "consonants"
     },
     {
@@ -157,7 +157,7 @@
       "symbol": "dʒ",
       "name": "voiced postalveolar affricate",
       "description": "as in English 'judge'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Voiced_palato-alveolar_affricate.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "consonants"
     },
     {
@@ -165,7 +165,7 @@
       "symbol": "i",
       "name": "close front unrounded vowel",
       "description": "as in English 'fleece'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Close_front_unrounded_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "vowels"
     },
     {
@@ -173,7 +173,7 @@
       "symbol": "ɪ",
       "name": "near-close front unrounded vowel",
       "description": "as in English 'kit'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Near-close_near-front_unrounded_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "vowels"
     },
     {
@@ -181,7 +181,7 @@
       "symbol": "e",
       "name": "close-mid front unrounded vowel",
       "description": "as in English 'dress' (in some accents)",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Close-mid_front_unrounded_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "vowels"
     },
     {
@@ -189,7 +189,7 @@
       "symbol": "ɛ",
       "name": "open-mid front unrounded vowel",
       "description": "as in English 'dress'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Open-mid_front_unrounded_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "vowels"
     },
     {
@@ -197,7 +197,7 @@
       "symbol": "æ",
       "name": "near-open front unrounded vowel",
       "description": "as in English 'trap'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Near-open_front_unrounded_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "vowels"
     },
     {
@@ -205,7 +205,7 @@
       "symbol": "ə",
       "name": "mid central vowel",
       "description": "as in English 'strut'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Mid-central_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "vowels"
     },
     {
@@ -213,7 +213,7 @@
       "symbol": "ʌ",
       "name": "open-mid back unrounded vowel",
       "description": "as in English 'strut'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Open-mid_back_unrounded_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "vowels"
     },
     {
@@ -221,7 +221,7 @@
       "symbol": "ɑ",
       "name": "open back unrounded vowel",
       "description": "as in English 'father'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Open_back_unrounded_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "vowels"
     },
     {
@@ -229,7 +229,7 @@
       "symbol": "ɔ",
       "name": "open-mid back rounded vowel",
       "description": "as in English 'lot'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Open-mid_back_rounded_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "vowels"
     },
     {
@@ -237,7 +237,7 @@
       "symbol": "ʊ",
       "name": "near-close back rounded vowel",
       "description": "as in English 'foot'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Near-close_near-back_rounded_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "vowels"
     },
     {
@@ -245,7 +245,7 @@
       "symbol": "u",
       "name": "close back rounded vowel",
       "description": "as in English 'goose'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Close_back_rounded_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "vowels"
     },
     {
@@ -253,7 +253,7 @@
       "symbol": "l",
       "name": "voiced alveolar lateral-approximant",
       "description": "as in English 'lap'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Alveolar_lateral_approximant.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "approximants"
     },
     {
@@ -261,7 +261,7 @@
       "symbol": "ɹ",
       "name": "voiced alveolar approximant",
       "description": "as in English 'rap'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Alveolar_approximant.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "approximants"
     },
     {
@@ -269,7 +269,7 @@
       "symbol": "j",
       "name": "voiced palatal approximant",
       "description": "as in English 'yes'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Palatal_approximant.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "approximants"
     },
     {
@@ -277,7 +277,7 @@
       "symbol": "w",
       "name": "voiced labial-velar approximant",
       "description": "as in English 'wet'",
-      "audio_url": "",
+      "audio_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Voiced_labio-velar_approximant.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "category": "approximants"
     }
   ]
