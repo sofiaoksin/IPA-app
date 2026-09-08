@@ -4,6 +4,27 @@ import random
 
 import streamlit as st
 
+QUIZ_MODES = {
+    "easy": {
+        "label": "Easy",
+        "questions": 5,
+        "options": 3,
+        "help": "5 questions with 3 options each - Try it out!",
+    },
+    "medium": {
+        "label": "Medium",
+        "questions": 18,
+        "options": 5,
+        "help": "18 questions with 5 options each - Train half of the IPA symbols!",
+    },
+    "hard": {
+        "label": "Hard",
+        "questions": 35,
+        "options": 5,
+        "help": "35 questions with 5 options each - Train all of the IPA symbols!",
+    },
+}
+
 
 @st.cache_resource
 def load_ipa_data() -> dict:
@@ -33,6 +54,38 @@ def initialize_session_state() -> None:
         st.session_state.answer_submitted = False
     if "quiz_completed" not in st.session_state:
         st.session_state.quiz_completed = False
+    if "selected_mode" not in st.session_state:
+        st.session_state.selected_mode = None
+    if "quiz_config" not in st.session_state:
+        st.session_state.quiz_config = None
+
+
+def reset_quiz_state() -> None:
+    """Reset the active quiz and return to mode selection."""
+    st.session_state.quiz_started = False
+    st.session_state.current_question = 0
+    st.session_state.score = 0
+    st.session_state.quiz_questions = []
+    st.session_state.selected_answer = -1
+    st.session_state.answer_submitted = False
+    st.session_state.quiz_completed = False
+    st.session_state.selected_mode = None
+    st.session_state.quiz_config = None
+
+
+@st.dialog("Quit")
+def confirm_quit() -> None:
+    """Ask the user to confirm quitting the active quiz."""
+    st.write("Are you sure you want to quit this quiz?")
+
+    col1, col2 = st.columns(2)
+    with col1:
+        if st.button("Yes, quit", use_container_width=True, type="primary"):
+            reset_quiz_state()
+            st.rerun()
+    with col2:
+        if st.button("No, continue", use_container_width=True):
+            st.rerun()
 
 
 def get_random_options(
@@ -63,14 +116,19 @@ def get_random_options(
     return options, correct_index
 
 
-def setup_easy_mode(all_symbols: list[dict]) -> None:
-    """Setup easy mode quiz (5 questions, 3 options)."""
-    num_questions = min(5, len(all_symbols))
+def setup_quiz(mode: str, all_symbols: list[dict]) -> None:
+    """Set up a quiz using the configuration for the selected mode."""
+    config = QUIZ_MODES[mode].copy()
+    num_questions = min(config["questions"], len(all_symbols))
+    num_options = config["options"]
+
     selected_symbols = random.sample(all_symbols, num_questions)
     
     st.session_state.quiz_questions = []
     for symbol in selected_symbols:
-        options, correct_idx = get_random_options(symbol, all_symbols, num_options=3)
+        options, correct_idx = get_random_options(
+            symbol, all_symbols, num_options=num_options
+        )
         st.session_state.quiz_questions.append({
             "symbol": symbol,
             "options": options,
@@ -83,6 +141,8 @@ def setup_easy_mode(all_symbols: list[dict]) -> None:
     st.session_state.selected_answer = -1
     st.session_state.answer_submitted = False
     st.session_state.quiz_completed = False
+    st.session_state.selected_mode = mode
+    st.session_state.quiz_config = config
 
 
 def select_answer(index: int) -> None:
@@ -123,14 +183,14 @@ def display_question_content(question: dict, question_num: int, total_questions:
     if symbol.get("audio_url"):
         st.audio(symbol["audio_url"], format="audio/ogg")
     else:
-        st.info("⚠️ Audio file not yet configured. Add `audio_url` to ipa_symbols.json")
+        st.info("⚠️ Audio file not yet configured. Check the audio_url in the ipa_symbols.json file.")
     
     # Multiple choice options
     st.subheader("Choose the correct IPA symbol:")
     
     selected_index = st.session_state.selected_answer
     for idx, option in enumerate(options):
-        button_label = f"{option['symbol']} - {option['name']}"
+        button_label = f"{option['symbol']} \n\n {option['name']}"
         st.button(
             button_label,
             key=f"option_{question_num}_{idx}",
@@ -196,16 +256,7 @@ def display_quiz_results(score: int, total: int) -> None:
     
     st.markdown("---")
     if st.button("Start New Quiz", use_container_width=True, icon="🔄"):
-        for key in [
-            "quiz_started",
-            "quiz_completed",
-            "current_question",
-            "score",
-            "selected_answer",
-            "answer_submitted",
-        ]:
-            if key in st.session_state:
-                del st.session_state[key]
+        reset_quiz_state()
         st.rerun()
 
 
@@ -216,7 +267,15 @@ def main() -> None:
     ipa_data = load_ipa_data()
     all_symbols = ipa_data.get("symbols", [])
     
-    st.title("🧩 Quiz")
+    if st.session_state.quiz_started and not st.session_state.quiz_completed:
+        title_col, quit_col = st.columns([4, 1], vertical_alignment="center")
+        with title_col:
+            st.title("🧩 Quiz")
+        with quit_col:
+            if st.button("Quit", use_container_width=True, icon="🪁"):
+                confirm_quit()
+    else:
+        st.title("🧩 Quiz")
     
     # Quiz Selection Screen
     if not st.session_state.quiz_started:
@@ -225,28 +284,38 @@ def main() -> None:
         col1, col2, col3 = st.columns(3)
         with col1:
             if st.button(
-                "🐣 Easy\n5 questions\n3 options",
+                f"🐣 {QUIZ_MODES['easy']['label']}\n\n"
+                f"{QUIZ_MODES['easy']['questions']} questions\n"
+                f"{QUIZ_MODES['easy']['options']} options",
                 use_container_width=True,
-                help="5 questions with 3 options each - perfect for beginners!"
+                help=QUIZ_MODES["easy"]["help"],
             ):
-                setup_easy_mode(all_symbols)
+                setup_quiz("easy", all_symbols)
                 st.rerun()
         
         with col2:
-            st.button(
-                "🐟 Medium\n10 questions\n5 options",
-                disabled=True,
+            if st.button(
+                f"🐟 {QUIZ_MODES['medium']['label']}\n\n"
+                f"{QUIZ_MODES['medium']['questions']} questions\n"
+                f"{QUIZ_MODES['medium']['options']} options",
+                disabled=False,
                 use_container_width=True,
-                help="Coming soon!"
-            )
+                help=QUIZ_MODES["medium"]["help"],
+            ):
+                setup_quiz("medium", all_symbols)
+                st.rerun()
         
         with col3:
-            st.button(
-                "🐲 Hard\n15 questions\nOpen-ended",
-                disabled=True,
+            if st.button(
+                f"🐲 {QUIZ_MODES['hard']['label']}\n\n"
+                f"{QUIZ_MODES['hard']['questions']} questions\n"
+                f"{QUIZ_MODES['hard']['options']} options",
+                disabled=False,
                 use_container_width=True,
-                help="Coming soon!"
-            )
+                help=QUIZ_MODES["hard"]["help"],
+            ):
+                setup_quiz("hard", all_symbols)
+                st.rerun()
         
         st.markdown("---")
         st.info("📖 **Tip**: Learn more about IPA symbols in the Interactive IPA Chart!")
@@ -303,5 +372,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-
