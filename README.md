@@ -1,6 +1,6 @@
 # 🦜 IPA Learning App
 
-A Streamlit app for learning and practicing the International Phonetic Alphabet (IPA).
+A Streamlit app for learning and practicing the 35 symbols of the English International Phonetic Alphabet (IPA).
 
 ## ⛓️‍💥 Useful Links
 [Wikimedia Commons' General Phonetics collection](https://commons.wikimedia.org/wiki/General_phonetics)
