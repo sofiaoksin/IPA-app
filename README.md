@@ -27,7 +27,7 @@ A Streamlit app for learning and practicing the 35 symbols of the English Intern
 1. Clone the repository and open its folder:
 
 	```bash
-	git clone <repository-url>
+	git clone https://github.com/sofiaoksin/IPA-app.git
 	cd IPA-app
 	```
 
